@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #6c5ce7;
+    --income-color: #2ecc71;
+    --expense-color: #e74c3c;
+    --light-bg: #f7f7f7;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    overflow: hidden;
+    
+    
+    
+    
+  }
+  
+  .container {
+    background:#e3f2fd;
+    color: #0d47a1;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding-top: 10px; 
+  }
+  
+  h2 {
+    color: var(--primary-color);
+    margin-bottom:10px;
+  }
+  
+  h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin: 30px 0 15px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Income & Expense Container */
+  .inc-exp-container {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .inc-exp-container > div:first-of-type {
+    border-right: 2px solid #ddd;
+  }
+  
+  .money-plus {
+    color: var(--income-color);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .money-minus {
+    color: var(--expense-color);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Form */
+  .form-control {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+    border: 0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #574b90;
+  }
+  
+  /* Responsive */
+  @media (max-width: 450px) {
+    .container {
+        width: 90%;
+    }
+  }
+  

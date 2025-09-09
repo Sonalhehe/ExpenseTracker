@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiseWallet</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="welcomeMessage"><b>Welcome, User!</b></h2>
+        <h4>Your Balance</h4>
+        <h1 id="balance">&#8377;0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money-plus">+&#8377;0.00</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money-minus">-&#8377;0.00</p>
+            </div>
+        </div>
+        
+        <a href="history.html" class="btn">View Transaction History</a>
+        
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" id="text" placeholder="Enter transaction..." />
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount..." />
+            </div>
+            <div class="form-control">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="" disabled selected>Select Type</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </div>
+            <button class="btn">Add Transaction</button>
+        </form>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

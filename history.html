@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="history.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Transaction History</h2>
+        <a href="home.html" id ="back-button" class="btn back-btn"><b>Back to Expense Tracker</b></a>
+        
+        <div class="transaction-container">
+            <div class="transaction-column">
+                <h3>Income</h3>
+                <ul id="income-list" class="list"></ul>
+            </div>
+            <div class="transaction-column">
+                <h3>Expense</h3>
+                <ul id="expense-list" class="list"></ul>
+            </div>
+        </div>
+
+        <a href="home.html"><button id="clear-history" class="btn delete-btn"><b>Clear History</b></button></a>
+    </div>
+
+    <script src="history.js"></script>
+</body>
+
+</html>
